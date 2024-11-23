@@ -286,7 +286,7 @@ function getSignature(topic, password) { // role,
     return new Promise(function (resolve, reject) {
         let xhr = new XMLHttpRequest()
         console.log("location.hostname: " + location.hostname)
-        xhr.open('POST', './api/', true)
+        xhr.open('POST', '/api/', true)
         xhr.setRequestHeader('content-type', 'application/json')
         xhr.onload = function () {
             if (this.status >= 200 && this.status < 300) {

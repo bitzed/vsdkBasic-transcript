@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.json(), cors())
 
-app.post('/', (req, res) => {
+app.post('/api/', (req, res) => {
 
   const iat = Math.floor(new Date().getTime() / 1000)
   const exp = iat + 60 * 60 * 2
