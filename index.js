@@ -4,7 +4,7 @@ const cors = require('cors')
 const KJUR = require('jsrsasign')
 
 const app = express()
-const port = process.env.PORT || 3010;
+const port = process.env.PORT || 8080;
 const path = require('path')
 require('dotenv').config({ path: path.join(__dirname, '.env') })
 
